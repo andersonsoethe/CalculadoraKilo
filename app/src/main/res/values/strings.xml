@@ -3,7 +3,7 @@
     <string name="textCalculadoraGrama">Calculadora de Grama</string>
     <string name="textPriceHint">Total de Grama</string>
     <string name="textbtnCalcular">Calcular</string>
-    <string name="textPriceGrama">Valor da Grama</string>
+    <string name="textPriceGrama">Valor atual em Grama</string>
     <string name="textBtnSalvar">Salvar</string>
     <string name="textValorPorGrama">Preço de 100 gramas</string>
 </resources>

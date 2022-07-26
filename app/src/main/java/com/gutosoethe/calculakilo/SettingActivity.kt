@@ -2,8 +2,8 @@ package com.gutosoethe.calculakilo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.gutosoethe.calculakilo.databinding.ActivityMainBinding
 import com.gutosoethe.calculakilo.databinding.ActivitySettingBinding
+
 
 
 class SettingActivity : AppCompatActivity(){
@@ -18,17 +18,16 @@ class SettingActivity : AppCompatActivity(){
         setContentView(view)
         supportActionBar?.hide()
 
+    }
 
+    override fun onStart() {
+        super.onStart()
         binding.btnSavaSetting.setOnClickListener(){
 
-            val ValorGrama = binding.edtPricePerGrama.toString().toDouble()
-
+            val ValorGrama = binding.edtPricePerGrama.text.toString().toDouble()
+            binding.tvValorGrama.text = "Valor atual em Grama = ${ValorGrama}"
 
         }
-
-
-
-
-
     }
+
 }
